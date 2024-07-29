@@ -1,7 +1,8 @@
+"use client";
 import { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase/firebase.config";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 const SignInForm = () => {
   const [email, setEmail] = useState("");
